@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "config:base"
+    ],
+    "token": "${PAT}",
+    "repositories": [
+        {
+            "repository": "https://github.com/tetsumaru/go-private-sandbox",
+            "packegeFile": "go.mod",
+            "packgeeManager": "gomod"
+        }
+    ]
+}
