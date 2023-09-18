@@ -9,5 +9,8 @@
             "packegeFile": "go.mod",
             "packgeeManager": "gomod"
         }
-    ]
+    ],
+    "schedul": {
+        "interval": "1h"
+    }
 }
