@@ -1,18 +1,6 @@
 {
     "extends": [
-        "config:base"
-    ],
-    "hostRules": [
-        {
-            "matchHost": "https://api.github.com/tetsumaru/go-private-sandbox",
-            "token": "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",
-            "hostType": "github"
-        }
-    ],
-    "customEnvVariables": {
-        "GOPRIVATE": "github.com/tetsumaru/go-private-sandbox"
-    },
-    "schedule": {
-        "interval": "1h"
-    }
+        "config:base",
+        "github>whitesource/merge-confidence:beta"
+    ]
 }
