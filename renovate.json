@@ -5,7 +5,7 @@
     "hostRules": [
         {
             "matchHost": "https://github.com/tetsumaru",
-            "token": "${PAT}",
+            "token": "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",
             "hostType": "go"
         }
     ],
