@@ -9,6 +9,11 @@
             "hostType": "go"
         }
     ],
+    "customEnvVariables": {
+        "GOPRIVATE": "github.com/tetsumaru",
+        "GONOSUMDB": "github.com/tetsumaru",
+        "GONOPROXY": "github.com/tetsumaru"
+    },
     "schedule": {
         "interval": "1h"
     }
