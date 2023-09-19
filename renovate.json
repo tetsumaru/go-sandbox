@@ -2,11 +2,11 @@
     "extends": [
         "config:base"
     ],
-    "token": "${PAT}",
-    "repositories": [
+    "hostRules": [
         {
-            "repository": "https://github.com/tetsumaru/go-private-sandbox",
-            "packageFile": "go.mod"
+            "matchHost": "https://github.com/tetsumaru",
+            "token": "${PAT}",
+            "hostType": "go"
         }
     ],
     "schedule": {
