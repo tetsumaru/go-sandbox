@@ -4,7 +4,7 @@
     ],
     "hostRules": [
         {
-            "matchHost": "https://api.github.com/repos/tetsumaru",
+            "matchHost": "https://github.com/tetsumaru/go-private-sandbox",
             "token": "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",
             "hostType": "github"
         }
