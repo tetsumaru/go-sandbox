@@ -6,11 +6,11 @@
     "repositories": [
         {
             "repository": "https://github.com/tetsumaru/go-private-sandbox",
-            "packegeFile": "go.mod",
-            "packgeeManager": "gomod"
+            "packageFile": "go.mod",
+            "packageManager": "gomod"
         }
     ],
-    "schedul": {
+    "schedule": {
         "interval": "1h"
     }
 }
