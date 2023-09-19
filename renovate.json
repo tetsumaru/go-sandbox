@@ -10,9 +10,7 @@
         }
     ],
     "customEnvVariables": {
-        "GOPRIVATE": "github.com/tetsumaru/go-private-sandbox",
-        "GONOSUMDB": "github.com/tetsumaru/go-private-sandbox",
-        "GONOPROXY": "github.com/tetsumaru/go-private-sandbox"
+        "GOPRIVATE": "github.com/tetsumaru/go-private-sandbox"
     },
     "schedule": {
         "interval": "1h"
