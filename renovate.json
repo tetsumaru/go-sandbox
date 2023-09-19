@@ -5,12 +5,12 @@
     "hostRules": [
         {
             "matchHost": "https://github.com/tetsumaru",
-            "token": "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",
+            "token": "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",
             "hostType": "go"
         }
     ],
     "customEnvVariables": {
-        "GOPRIVATE": "github.com/tetsumaru",
+        "GOPRIVATE": "github.com/tetsumaru go get github.com/tetsumaru/go-private-sandbox",
         "GONOSUMDB": "github.com/tetsumaru",
         "GONOPROXY": "github.com/tetsumaru"
     },
