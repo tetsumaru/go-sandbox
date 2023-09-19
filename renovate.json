@@ -4,8 +4,8 @@
     ],
     "hostRules": [
         {
-            "matchHost": "https://github.com/tetsumaru/go-private-sandbox",
-            "token": "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",
+            "matchHost": "https://api.github.com/tetsumaru/go-private-sandbox",
+            "token": "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",
             "hostType": "github"
         }
     ],
