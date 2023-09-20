@@ -13,8 +13,7 @@
     "repositories": [
         {
             "repository": "tetsumaru/go-private-sandbox",
-            "packageFile": "go.mod",
-            "packageManager": "gomod"
+            "packageFile": "go.mod"
         }
     ],
     "postUpdateOptions": [
