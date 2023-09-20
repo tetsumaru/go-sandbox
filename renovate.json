@@ -6,7 +6,7 @@
     "hostRules": [
         {
             "matchHost": "https://github.com/tetsumaru",
-            "token": "${{ secrets.PAT }}",
+            "token": "${{ PAT }}",
             "hostType": "go"
         }
     ],
