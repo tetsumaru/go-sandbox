@@ -5,13 +5,19 @@
     ],
     "hostRules": [
         {
-            "matchHost": "https://github.com/tetsumaru",
+            "matchHost": "github.com",
             "token": "${{ PAT }}",
             "hostType": "github"
         }
     ],
+    "repositories": [
+        {
+            "repository": "https://github.com/tetsumaru/go-private-sandbox",
+            "packageFile": "go.mod",
+            "packageManager": "gomod"
+        }
+    ],
     "postUpdateOptions": [
         "gomodTidy"
-    ],
-    "autodiscover": true
+    ]
 }
