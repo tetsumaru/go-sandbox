@@ -6,12 +6,11 @@
     "hostRules": [
         {
             "matchHost": "https://github.com/tetsumaru",
-            "token": "${PAT}",
+            "token": "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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",
             "hostType": "go"
         }
     ],
     "postUpdateOptions": [
         "gomodTidy"
-    ],
-    "autodiscover": true
+    ]
 }
