@@ -7,7 +7,7 @@
         {
             "matchHost": "https://github.com/tetsumaru",
             "token": "${{ PAT }}",
-            "hostType": "go"
+            "hostType": "github"
         }
     ],
     "postUpdateOptions": [
