@@ -6,7 +6,7 @@
     "repositories": [
         {
             "type": "gomod",
-            "url": "tetsumaru/go-private-sandbox",
+            "url": "https://github.com/tetsumaru/go-private-sandbox",
             "token": "${PAT}"
         }
     ]
