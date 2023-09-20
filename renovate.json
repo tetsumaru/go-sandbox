@@ -3,11 +3,14 @@
         "config:base",
         "github>whitesource/merge-confidence:beta"
     ],
-    "repositories": [
+    "hostRules": [
         {
-            "type": "gomod",
-            "url": "https://github.com/tetsumaru/go-private-sandbox",
-            "token": "${PAT}"
+            "matchHost": "https://github.com/tetsumaru",
+            "token": "${PAT}",
+            "hostType": "go"
         }
+    ],
+    "postUpdateOptions": [
+        "gomodTidy"
     ]
 }
