@@ -3,16 +3,10 @@
         "config:base",
         "github>whitesource/merge-confidence:beta"
     ],
-    "hostRules": [
-        {
-            "matchHost": "github.com",
-            "token": "${{ secrets.PAT_SANDBOX }}",
-            "hostType": "github"
-        }
-    ],
     "repositories": [
         {
             "repository": "tetsumaru/go-private-sandbox",
+            "token": "${{ PAT_SANDBOX }}",
             "packageFile": "go.mod"
         }
     ],
