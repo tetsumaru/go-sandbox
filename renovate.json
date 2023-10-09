@@ -5,7 +5,7 @@
     ],
     "repositories": [
         {
-            "repository": "tetsumaru/go-private-sandbox",
+            "repository": "https://github.com/tetsumaru/go-private-sandbox",
             "token": "${{ PAT_SANDBOX }}",
             "packageFile": "go.mod"
         }
