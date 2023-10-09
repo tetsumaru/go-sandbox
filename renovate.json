@@ -6,7 +6,7 @@
     "hostRules": [
         {
             "matchHost": "github.com",
-            "token": "${{ secrets.PAT }}",
+            "token": "${{ secrets.PAT_SANDBOX }}",
             "hostType": "github"
         }
     ],
