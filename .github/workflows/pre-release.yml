@@ -1,0 +1,16 @@
+name: pre-release
+
+on:
+  push:
+    tags:
+      - "release_[0-9]+"
+
+concurrency: ${{ github.workflow }}
+
+jobs:
+  noop:
+    name: No Operation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "This is a placeholder step"
