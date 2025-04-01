@@ -1,0 +1,15 @@
+name: release
+
+on:
+  release:
+    types: [released]
+
+concurrency: ${{ github.workflow }}
+
+jobs:
+  noop:
+    name: No Operation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "This is a placeholder step"
