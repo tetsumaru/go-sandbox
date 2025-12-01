@@ -1,6 +1,7 @@
 name: conditional-check
 
 on:
+  workflow_call:
   push:
     branches:
       - main
