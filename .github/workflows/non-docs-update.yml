@@ -13,15 +13,20 @@ on:
 concurrency: ${{ github.workflow }}
 
 jobs:
-  # 仮のジョブ：branch protection ruleで使用
-  status-check:
-    name: Status Check
-    runs-on: ubuntu-latest
-    steps:
-      - name: Always pass
-        run: echo "Status check passed"
-  
   # 実際の処理
   check:
     uses: ./.github/workflows/non-docs-check.yml
+  
+  check2:
+    uses: ./.github/workflows/non-docs-check2.yml
+  
+  # 仮のジョブ：branch protection ruleで使用
+  # checkとcheck2の両方が正常終了したときに正常終了する
+  status-check:
+    name: Status Check
+    needs: [check, check2]
+    runs-on: ubuntu-latest
+    steps:
+      - name: All checks passed
+        run: echo "All checks passed"
 
