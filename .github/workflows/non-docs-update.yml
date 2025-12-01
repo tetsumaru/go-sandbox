@@ -1,0 +1,22 @@
+name: non-docs-update
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'docs/**'
+
+concurrency: ${{ github.workflow }}
+
+jobs:
+  non-docs:
+    name: Non-Docs Update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Non-docs files updated
+        run: echo "Files other than docs have been updated"
+

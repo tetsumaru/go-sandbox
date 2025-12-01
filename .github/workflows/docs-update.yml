@@ -1,0 +1,22 @@
+name: docs-update
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+
+concurrency: ${{ github.workflow }}
+
+jobs:
+  docs:
+    name: Docs Update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Docs updated
+        run: echo "Docs directory has been updated"
+
