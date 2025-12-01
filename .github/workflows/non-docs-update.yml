@@ -1,7 +1,6 @@
 name: conditional-check
 
 on:
-  workflow_call:
   push:
     branches:
       - main
@@ -15,12 +14,5 @@ concurrency: ${{ github.workflow }}
 
 jobs:
   check:
-    name: Check
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      
-      - name: Non-docs files updated
-        run: echo "Files other than docs have been updated"
+    uses: ./.github/workflows/non-docs-check.yml
 
