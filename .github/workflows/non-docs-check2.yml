@@ -1,0 +1,16 @@
+name: non-docs-check2
+
+on:
+  workflow_call:
+
+jobs:
+  check:
+    name: Check2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Non-docs files updated (check2)
+        run: echo "Files other than docs have been updated (check2)"
+

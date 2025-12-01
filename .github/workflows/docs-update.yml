@@ -13,13 +13,11 @@ on:
 concurrency: ${{ github.workflow }}
 
 jobs:
-  check:
-    name: Check
+  # 仮のジョブ：branch protection ruleで使用
+  status-check:
+    name: Status Check
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      
-      - name: Docs updated
-        run: echo "Docs directory has been updated"
+      - name: Always pass
+        run: echo "Status check passed"
 
