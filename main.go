@@ -1,5 +1,6 @@
 package main
 
+// 検証用の変更: non-docs-update workflowのテスト
 import (
 	"log"
 	"os"
