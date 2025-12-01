@@ -20,15 +20,4 @@ jobs:
     steps:
       - name: Always pass
         run: echo "Status check passed"
-  
-  # 実際の処理
-  check:
-    name: Check
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      
-      - name: Docs updated
-        run: echo "Docs directory has been updated"
 
