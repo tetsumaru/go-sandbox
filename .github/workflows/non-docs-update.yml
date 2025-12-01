@@ -1,4 +1,4 @@
-name: non-docs-update
+name: conditional-check
 
 on:
   push:
@@ -13,8 +13,8 @@ on:
 concurrency: ${{ github.workflow }}
 
 jobs:
-  non-docs:
-    name: Non-Docs Update
+  check:
+    name: Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
