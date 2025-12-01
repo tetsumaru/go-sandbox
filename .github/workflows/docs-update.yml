@@ -1,4 +1,4 @@
-name: conditional-check
+name: docs-only
 
 on:
   push:
