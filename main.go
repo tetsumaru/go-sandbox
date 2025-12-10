@@ -1,6 +1,7 @@
 package main
 
 // 検証用の変更: non-docs-update workflowのテスト
+// 検証用の更新: non-docs-update workflowの動作確認
 import (
 	"log"
 	"os"
